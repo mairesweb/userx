@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-userx" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>UserX</name>
+    <description>The plugin cordova for UserX app</description>
+    <keywords>userx, analytics, ux analytics, userx.com</keywords>
+
+    <js-module name="UserX" src="www/UserX.js">
+        <clobbers target="UserX" />
+    </js-module>
+
+    <preference name="api_key" />
+
+    <platform name="android">
+    	<framework src="build-extras-userx.gradle" type="gradleReference" />
+
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="UserX">
+                <param name="android-package" value="cordova.plugin.userx.UserX" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/UserX.java" target-dir="src/cordova/plugin/userx/UserX" />
+    </platform>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="UserX">
+                <param name="ios-package" value="UserX" />
+            </feature>
+        </config-file>
+
+        <framework src="UserX" type="podspec" spec="3.1.0" />
+
+        <source-file src="src/ios/UserX.m" />
+    </platform>
+</plugin>

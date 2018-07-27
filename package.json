@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-userx",
+  "version": "1.0.0",
+  "description": "The plugin cordova for UserX app",
+  "cordova": {
+    "id": "cordova-plugin-userx",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mairesweb/userx.git"
+  },
+  "keywords": [
+    "userx",
+    "analytics",
+    "ux analytics",
+    "userx.com",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Marcelo Vieira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mairesweb/userx/issues"
+  },
+  "homepage": "https://github.com/mairesweb/userx#readme"
+}

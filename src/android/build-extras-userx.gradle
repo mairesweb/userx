@@ -1,0 +1,8 @@
+// Required for Android Support Library 26.0.0+ and Google Play services 11.+
+repositories {
+  maven { url 'https://github.com/userxpro/userx/raw/maven/' }
+}
+
+dependencies {
+  compile "pro.userx:UserX:2.0.8@aar"
+}
